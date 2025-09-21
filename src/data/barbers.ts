@@ -1,0 +1,72 @@
+import type { Barber } from '../types';
+
+export const BARBERS: Barber[] = [
+  {
+    id: 'leo',
+    name: 'Λεωνίδας Παπαδόπουλος',
+    bio: 'Ιδιοκτήτης του Barberhood, ειδικός στα fades και στις κλασικές γραμμές.',
+    experience: 12,
+    specialties: ['Skin fade', 'Κλασικά κουρέματα', 'Beard grooming'],
+    phone: '+30 210 0000 111',
+    location: 'Κολωνάκι, Αθήνα',
+    slotInterval: 15,
+    schedule: [
+      { day: 1, startTime: '10:00', endTime: '20:00' },
+      { day: 2, startTime: '10:00', endTime: '20:00' },
+      { day: 3, startTime: '10:00', endTime: '20:00' },
+      { day: 4, startTime: '10:00', endTime: '20:00' },
+      { day: 5, startTime: '10:00', endTime: '18:00' },
+      { day: 6, startTime: '10:00', endTime: '16:00' },
+    ],
+    breaks: [
+      { day: 1, startTime: '14:00', endTime: '14:30', label: 'Lunch break' },
+      { day: 2, startTime: '14:00', endTime: '14:30', label: 'Lunch break' },
+      { day: 3, startTime: '14:00', endTime: '14:30', label: 'Lunch break' },
+      { day: 4, startTime: '14:00', endTime: '14:30', label: 'Lunch break' },
+      { day: 5, startTime: '13:30', endTime: '14:00', label: 'Lunch break' },
+    ],
+  },
+  {
+    id: 'nick',
+    name: 'Νίκος Δεληγιάννης',
+    bio: 'Master barber με αγάπη στο grooming και στην περιποίηση δέρματος.',
+    experience: 9,
+    specialties: ['Grooming', 'Beard styling', 'Hot towel shave'],
+    phone: '+30 210 0000 222',
+    location: 'Νέα Σμύρνη',
+    slotInterval: 15,
+    schedule: [
+      { day: 2, startTime: '11:00', endTime: '21:00' },
+      { day: 3, startTime: '11:00', endTime: '21:00' },
+      { day: 4, startTime: '11:00', endTime: '21:00' },
+      { day: 5, startTime: '11:00', endTime: '19:00' },
+      { day: 6, startTime: '10:00', endTime: '18:00' },
+    ],
+    breaks: [
+      { day: 2, startTime: '17:00', endTime: '17:30', label: 'Coffee break' },
+      { day: 3, startTime: '17:00', endTime: '17:30', label: 'Coffee break' },
+      { day: 4, startTime: '17:00', endTime: '17:30', label: 'Coffee break' },
+    ],
+  },
+  {
+    id: 'anna',
+    name: 'Άννα Μαρκοπούλου',
+    bio: 'Εξειδίκευση σε kids cuts και σε σύγχρονα γυναικεία short styles.',
+    experience: 7,
+    specialties: ['Kids cuts', 'Textured crops', 'Creative styling'],
+    phone: '+30 210 0000 333',
+    location: 'Χαλάνδρι',
+    slotInterval: 20,
+    schedule: [
+      { day: 1, startTime: '12:00', endTime: '20:00' },
+      { day: 3, startTime: '12:00', endTime: '20:00' },
+      { day: 5, startTime: '12:00', endTime: '20:00' },
+      { day: 6, startTime: '10:00', endTime: '18:00' },
+    ],
+    breaks: [
+      { day: 1, startTime: '16:00', endTime: '16:30', label: 'Snack break' },
+      { day: 3, startTime: '16:00', endTime: '16:30', label: 'Snack break' },
+      { day: 5, startTime: '16:00', endTime: '16:30', label: 'Snack break' },
+    ],
+  },
+];
